@@ -5,6 +5,12 @@ public class Firestations {
     private String adresse;
     private String station;
 
+    public Firestations(int id, String adresse, String station) {
+        this.id = id;
+        this.adresse = adresse;
+        this.station = station;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -27,5 +33,10 @@ public class Firestations {
 
     public void setStation(String station) {
         this.station = station;
+    }
+
+    @Override
+    public String toString(){
+        return "Firestations{" + "id=" + id + ", station" + station ;
     }
 }
