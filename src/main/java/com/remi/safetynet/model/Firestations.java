@@ -5,6 +5,10 @@ public class Firestations {
     private String adresse;
     private String station;
 
+    public Firestations() {
+
+    }
+
     public Firestations(int id, String adresse, String station) {
         this.id = id;
         this.adresse = adresse;
