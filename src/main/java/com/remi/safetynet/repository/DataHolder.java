@@ -16,11 +16,12 @@ public class DataHolder {
     }
 
     private Data data;
+
     public DataHolder(String[] args) throws IOException {
         ClassLoader classLoader = DataHolder.class.getClassLoader();
         InputStream inputStream = classLoader.getResourceAsStream("data.json");
         String fileContent = readFromInputStream(inputStream);
-        this.data = JsonIterator.deserialize(fileContent,Data.class);
+        this.data = JsonIterator.deserialize(fileContent, Data.class);
         //ICI UTILISATION JSONITER transfo string en
 
     }
