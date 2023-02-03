@@ -12,7 +12,8 @@ public class MedicalRecordsRepository {
     public MedicalRecordsRepository(DataHolder dataHolder) {
         this.dataHolder = dataHolder;
     }
-    public List<MedicalRecords> findAllMedicalsRecords(){
+
+    public List<MedicalRecords> findAllMedicalsRecords() {
         return dataHolder.getData().getMedicalrecords();
     }
 }

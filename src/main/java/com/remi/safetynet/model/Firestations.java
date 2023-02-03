@@ -1,5 +1,7 @@
 package com.remi.safetynet.model;
 
+import java.util.List;
+
 public class Firestations {
     private String adresse;
     private String station;
@@ -30,8 +32,4 @@ public class Firestations {
         this.station = station;
     }
 
-    @Override
-    public String toString() {
-        return "Firestations{" + ", station" + station;
-    }
 }
